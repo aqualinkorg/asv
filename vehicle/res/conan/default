@@ -1,0 +1,15 @@
+[build_requires]
+
+[settings]
+arch=armv8
+arch_build=armv8
+os=Linux
+os_build=Linux
+compiler=gcc
+compiler.version=7
+compiler.libcxx=libstdc++11
+build_type=Release
+
+[options]
+
+[env]

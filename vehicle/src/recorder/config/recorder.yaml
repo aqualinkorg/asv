@@ -1,0 +1,4 @@
+recorder:
+  ros__parameters:
+    minimum_sample_period_msecs: 2000
+    storage_path: "/tmp"

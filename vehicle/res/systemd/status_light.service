@@ -1,0 +1,15 @@
+[Unit]
+Description=Application that blinks when data samples are recorded to indicate activity
+
+[Service]
+User=root
+Group=root
+NonBlocking=True
+WorkingDirectory=/opt/openasv/vehicle
+ExecStart=/opt/openasv/vehicle/scripts/run_status_light.sh
+SyslogIdentifier=status_light
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

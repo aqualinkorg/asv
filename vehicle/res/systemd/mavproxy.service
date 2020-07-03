@@ -1,0 +1,15 @@
+[Unit]
+Description=Bridge for mavlink data between the serial port and network interface
+
+[Service]
+User=root
+Group=root
+NonBlocking=True
+WorkingDirectory=/opt/openasv/vehicle
+ExecStart=/opt/openasv/vehicle/scripts/run_mavproxy.sh
+SyslogIdentifier=mavproxy
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

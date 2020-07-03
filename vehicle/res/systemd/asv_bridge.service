@@ -1,0 +1,15 @@
+[Unit]
+Description=Bridge of pixhawk APIs to ROS2 bus
+
+[Service]
+User=root
+Group=root
+NonBlocking=True
+WorkingDirectory=/opt/openasv/vehicle
+ExecStart=/opt/openasv/vehicle/scripts/run_asv_bridge.sh
+SyslogIdentifier=asv_bridge
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

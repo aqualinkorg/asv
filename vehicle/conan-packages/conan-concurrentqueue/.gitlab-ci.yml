@@ -1,0 +1,43 @@
+stages: 
+    - build
+
+variables:
+    PACKAGE_NAME: "concurrentqueue"
+
+    # Conan Package Tools Config
+    CONAN_CHANNEL: "testing"
+    CONAN_REMOTES: "https://orov.jfrog.io/orov/api/conan/orov-conan-public@True@orov_public, https://orov.jfrog.io/orov/api/conan/orov-conan-private@True@orov_private"
+    CONAN_UPLOAD: "https://orov.jfrog.io/orov/api/conan/orov-conan-public@True@orov_public"
+    CONAN_STABLE_BRANCH_PATTERN: "openrov/*"
+    CONAN_UPLOAD_ONLY_WHEN_STABLE: 1
+
+###########################
+## Job Templates
+
+# amd64
+.jobs:amd64: &amd64_job
+    image: openrov/amd64-ubuntu-core:bionic
+    tags:
+        - amd64
+    variables:
+        ARCH: "amd64"
+
+###########################
+## User Templates
+
+# Build C++ libs
+.build: &build_job
+    stage: build
+    only:
+        - /^openrov\/*/
+    script:
+        - python3 build.py
+
+###########################
+## Platform jobs
+
+# amd64
+build:amd64:
+    <<: *amd64_job
+    <<: *build_job
+

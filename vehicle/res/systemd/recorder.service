@@ -1,0 +1,15 @@
+[Unit]
+Description=Application that records video and telemetry data
+
+[Service]
+User=root
+Group=root
+NonBlocking=True
+WorkingDirectory=/opt/openasv/vehicle
+ExecStart=/opt/openasv/vehicle/scripts/run_recorder.sh
+SyslogIdentifier=recorder
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
