@@ -15,7 +15,7 @@ The project is split into three main folders, each with their own setup guides:
 While there is a great deal of flexibility in which order to read and follow the instructions, the order we recommend is:
 
 1. Review all materials in `hardware/` to get an understanding of how everything fits together:
-   - [Hardware Setup](hardware/hardware_setup.md)
+   - [Hardware Setup](hardware/README.md)
    - [System Diagram](hardware/drawings_and_cad/system_diagram.pdf)
    - [Electrical Connections](hardware/drawings_and_cad/electrical_connections.pdf)
    - [Bill of Materials](hardware/bill_of_materials.pdf)
@@ -23,7 +23,7 @@ While there is a great deal of flexibility in which order to read and follow the
 3. Before assembling the hardware, set up the Nano and Rambutan router. These steps are easier pre-assembly:
    - [Nano Setup](vehicle/nano_setup.md)
    - [Router Setup](vehicle/router_setup.md)
-4. Follow the instructions and drawings in the [Hardware Setup](hardware/hardware_setup.md) to assemble the electronics and battery enclosures
+4. Follow the instructions and drawings in the [Hardware Setup](hardware/README.md) to assemble the electronics and battery enclosures
 5. Integrate the electronics and battery enclosures, motors, sensors, etc. into your vehicle hull
 6. With the vehicle fully assembled, perform the [Pixhawk Setup](vehicle/pixhawk_setup.md)
 7. At this point, your vehicle should be fully assembled, calibrated, and ready to deploy.
@@ -35,5 +35,5 @@ Here is an image that shows the way all of the nodes connect together via ROS2 t
 ![topicmap](./vehicle/images/topic_map.png)
 
 For more information on each software node, see:
-  - [Groundstation Software](groundstation/software.md)
-  - [Vehicle Software](vehicle/software.md)
+  - [Groundstation Software](groundstation/README.md)
+  - [Vehicle Software](vehicle/README.md)
