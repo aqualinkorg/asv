@@ -6,7 +6,7 @@ class ASVNanoConan( ConanFile ):
     version         = "1.0.0"
     author          = "developer@aqualink.org"
     description     = ""
-    license         = "Proprietary"
+    license         = ""
 
     settings        = "os", "compiler", "arch", "build_type"
     options         = {"shared": [True, False], "fPIC": [True, False]}
