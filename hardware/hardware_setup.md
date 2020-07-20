@@ -41,25 +41,25 @@ Follow the System Diagram and Electrical Connections diagrams.
 
 ## Final Assembly
 ### Enclosure Assembly
-![image](images/cad_iso_box.png)
-![image](images/cad_top_box_no_lid.png)
-![image](images/cad_front_box.png)
-![image](images/cad_left_box.png)
-![image](images/cad_back_box.png)
+![image](./images/cad_iso_box.png)
+![image](./images/cad_top_box_no_lid.png)
+![image](./images/cad_front_box.png)
+![image](./images/cad_left_box.png)
+![image](./images/cad_back_box.png)
 
 ### Plates Assembly
-![image](images/cad_iso_plate.png)
-![image](images/cad_front_plates.png)
-![image](images/cad_left_plates.png)
-![image](images/cad_back_plates.png)
-![image](images/cad_right_plates.png)
-![image](images/cad_top_plates.png)
+![image](./images/cad_iso_plate.png)
+![image](./images/cad_front_plates.png)
+![image](./images/cad_left_plates.png)
+![image](./images/cad_back_plates.png)
+![image](./images/cad_right_plates.png)
+![image](./images/cad_top_plates.png)
 
 ### Final Assembly Pictures
-![images](images/final_system_1.PNG)
-![images](images/final_system_2.PNG)
-![image](images/final_system_3.PNG)
-![image](images/final_system_4.png)
+![image](./images/final_system_1.PNG)
+![image](./images/final_system_2.PNG)
+![image](./images/final_system_3.PNG)
+![image](./images/final_system_4.png)
 
 ## Other Notes
 - The two blank penetrators are there for accessories that can be connected to the system.

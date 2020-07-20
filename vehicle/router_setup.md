@@ -1,5 +1,6 @@
 
 # Router Setup
+
 In our vehicle design, we have chosen to use a separate single-board computer to act as an independent WiFi router through which all LAN communication will occur. While it is possible to plug a USB WiFi adapter into the Jetson Nano and have the Nano act as an Access Point, there are some potential downsides. As a rationale for using the Rambutan:
 
   - USB WiFi dongle solutions vary greatly in driver quality, stability, and performance. The Rambutan is a solid, reliable solution that has been used in commercial products.

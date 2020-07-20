@@ -10,7 +10,6 @@ We will generally be following, with a few additional items:
 
 <https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/>
 
-
 ```sh
 # Install utilities needed for next steps
 sudo apt-get update
