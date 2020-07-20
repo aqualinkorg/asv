@@ -240,13 +240,50 @@ If you configured your USB drive to mount to /media/${USER}/usb, set the storage
 
 If you like, you can also modify the minimum period that `recorder` records samples at. By default, `recorder` will record samples no faster than once every 2000ms (recording is triggered on the earliest GPS update that happens after this period). By increasing the minimum period, you can control how quickly your storage disk space fills up, depending on your application and setup's needs.
 
-## Configuring the Pixhawk, once the whole system is running
+## Configuring the Pixhawk
 
-In QGroundControl, there are a few configuration changes that need to be made. Turn your entire system on, open QGroundControl and make sure you have a connection.
+### First Time Firmware Flash
+
+Depending on where you purchased the Pixhawk from, it is most likely the case that your Pixhawk does not have the correct firmware version flashed on it straight out of the box. The firmware can only be reflashed when connected directly to a PC over USB, so this process will first require us to temporarily disconnect the Pixhawk from the Jetson Nano. Once that is done, the following steps and photos describe how to flash the correct firmware to the Pixhawk.
+
+1. First connect the groundstation PC directly to the Pixhawk via USB micro port
+2. Open QGroundControl and wait for it to detect the Pixhawk
+3. Click on the `Firmware` tab on the left
+4. Follow the instructions for flashing new firmware and unplug the Pixhawk, then plug it back in
+5. Select the following settings in the box on the right:
+   - Ardupilot
+   - ChibiOS
+   - Rover
+   - Pixhawk1 - 4.0.0
+6. Click Ok to begin the firmware flash process
+7. Once the flashing process is complete, the Pixhawk will reboot and QGroundControl will detect it again once it completes the reboot process.
+8. Now that the firmware has been upgraded, you can disconnect the Pixhawk from your groundstation PC and reconnect the Pixhawk to the Jetson Nano.
+
+### System Bring-up
+
+Now that the Pixhawk has the correct firmware and is reconnected to the Jetson Nano, you will need to close the electrical box back up and finish any hardware configurations for your vehicle such that it is ready for flight.
+
+Once all hardware preparations are complete, we are ready to power on the vehicle and make some final software configurations in QGroundControl.
+
+Turn your entire system on, open QGroundControl and make sure you have a connection for the following steps.
+
+```
+NOTE: Many of the steps to follow involve rebooting the Pixhawk after making changes. The simplest way to do this with the vehicle fully assembled is to disconnect and reconnect the battery. Please pay attention to all prompts within QGroundControl to reboot after performing certain configurations/calibrations.
+```
+
+### Initial Parameter Flash
+
+We will start by uploading a pre-configured baseline parameter file that will get most things working out of the box, provided the motor and pixhawk configuration matches the hardware reference provided in this project. To upload this file:
+
+1. In QGroundControl on the left menu, click the `Parameters` tab
+2. In the top right, click the `Tools` button
+3. Select `Load from file`
+4. Within this git repo, navigate to and select the file: `groundstation/config/asv_initial_params.params`
+5. After the file has been successfully uploaded, power cycle the vehicle.
 
 ### Frame Configuration
 
-The vehicle frame is selected in the `Frame` tab of the `Vehicle Setup` page. Choose the `SimpleROV-3` frame.
+The vehicle frame is selected in the `Frame` tab of the `Vehicle Setup` page. Choose the `Boat` frame.
 
 ### Sensor Calibration
 
@@ -264,17 +301,19 @@ Next, you will need to walk through the calibration process for your sensors:
 
 Finally, you will need to configure the Power parameters, by clicking on the `Power` tab.
 
-1. The `Battery capacity` field will depend on your battery. If using the BlueRobotics 18Ah battery, set this to 18000 mAh.
-2. In the `Power sensor` field, select Blue Robotics Power Sense Module R2.
+1. In the `Battery monitor` field, select `Analog Voltage and Current`
+2. The `Battery capacity` field will depend on your battery. If using the BlueRobotics 18Ah battery, set this to 18000 mAh
+3. Leave `Minimum arming voltage` set to 0.0
+4. In the `Power sensor` field, select `Blue Robotics Power Sense Module R2`
 
 ## Further reading
 
-The scope of this project does not currently cover all of the various topics relating to QGroundControl or the Pixhawk/ArduSub configuration, nor does it provide any detailed instruction on how to use these pieces of software. For further information or more detailed information and instructions for each project, please see the following links:
+The scope of this project does not currently cover all of the various topics relating to QGroundControl or the Pixhawk/Ardurover configuration, nor does it provide any detailed instruction on how to use these pieces of software. In particular, if you have deviated from the hardware configuration or vehicle topology specified within this tutorial's docs, you may need to further customize the Pixhawk parameters. For further information or more detailed information and instructions for each project, please see the following links:
 
-### ArduSub
+### ArduRover Docs
 
-<https://www.ardusub.com/>
+<https://ardupilot.org/rover/index.html>
 
-### QGroundControl & Mavlink
+### QGroundControl & Mavlink Docs
 
 <https://www.dronecode.org/documentation/>
