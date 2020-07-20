@@ -14,8 +14,8 @@
 Refer to the [Bill of Materials (BOM)](bill_of_materials.pdf) for the list of parts
 
 #### Not on Bill of Materials
-- [Upper Plate](upper_plate/) - This part can be laser cut out of 3mm thick material.
-- [Power Mounting Block](power_mounting_block/) - This part can be 3D printed
+- [Upper Plate](drawings_and_cad/upper_plate/) - This part can be laser cut out of 3mm thick material.
+- [Power Mounting Block](drawings_and_cad/power_mounting_block/) - This part can be 3D printed
 - Double sided tape (to secure Pixhawk)
 - Grease (for o-rings)
 - USB 3.0 SSD (for storing data)
@@ -27,10 +27,10 @@ Refer to the [Bill of Materials (BOM)](bill_of_materials.pdf) for the list of pa
 - M2.5x22mm screws (x4) are only used to attach the fan to the Jetson Nano
 
 ### Drill Enclosure
-Refer to the [enclosure drawing](enclosure/DRW-0023-01_PTS-25340-C_with_holes.pdf) for the location the holes should be drilled, as well as the hole diameter. The hole callouts are for clearance holes for parts to fit through. This means the sizes are less common. You can use a drill that is +/- 0.2mm without issue. Also, while all dimensions are metric, sometimes a standard drill bit will be a close match.
+Refer to the [enclosure drawing](drawings_and_cad/enclosure/DRW-0023-01_PTS-25340-C_with_holes.pdf) for the location the holes should be drilled, as well as the hole diameter. The hole callouts are for clearance holes for parts to fit through. This means the sizes are less common. You can use a drill that is +/- 0.2mm without issue. Also, while all dimensions are metric, sometimes a standard drill bit will be a close match.
 
 ### Drill Bottom Plate
-Refer to the [bottom plate drawing](lower_plate/DRW-0019-01_PTV-25340_with_holes.pdf) for the location the holes should be drilled, as well as the hole diameter. The hole callouts are for clearance holes for parts to fit through. This means the sizes are less common. You can use a drill that is +/- 0.2mm without issue. Also, while all dimensions are metric, sometimes a standard drill bit will be a close match.
+Refer to the [bottom plate drawing](drawings_and_cad/lower_plate/DRW-0019-01_PTV-25340_with_holes.pdf) for the location the holes should be drilled, as well as the hole diameter. The hole callouts are for clearance holes for parts to fit through. This means the sizes are less common. You can use a drill that is +/- 0.2mm without issue. Also, while all dimensions are metric, sometimes a standard drill bit will be a close match.
 
 There are 3 sets of holes for the Eurostyle Terminal Block. This is to allow for some adjustment depending on wire length.
 
