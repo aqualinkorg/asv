@@ -250,7 +250,7 @@ Depending on where you purchased the Pixhawk from, it is most likely the case th
 2. Open QGroundControl and wait for it to detect the Pixhawk
 3. Click on the `Firmware` tab on the left
 
-![picture 1](../images/fccd5a278339148c46f22bca4048555811b07ca6a9bbef8ecbe2aef4013a97ce.png)  
+![picture 1](./images/fccd5a278339148c46f22bca4048555811b07ca6a9bbef8ecbe2aef4013a97ce.png)  
 
 4. Follow the instructions for flashing new firmware and unplug the Pixhawk, then plug it back in
 5. Select the following settings in the box on the right:
@@ -259,12 +259,12 @@ Depending on where you purchased the Pixhawk from, it is most likely the case th
    - Rover
    - Pixhawk1 - 4.0.0
 
-![picture 2](../images/e4b8e2d43f296c841d8b316fd3ad2a0159337fbb243db4a78f4f45ac25f7b931.png)  
+![picture 2](./images/e4b8e2d43f296c841d8b316fd3ad2a0159337fbb243db4a78f4f45ac25f7b931.png)  
 
 6. Click Ok to begin the firmware flash process
 7. Once the flashing process is complete, the Pixhawk will reboot and QGroundControl will detect it again once it completes the reboot process
 
-![picture 3](../images/b2d4907fde705a4739665f6490a8a87233a6eba2a03a31a6c157164d9d74d9f5.png)  
+![picture 3](./images/b2d4907fde705a4739665f6490a8a87233a6eba2a03a31a6c157164d9d74d9f5.png)  
 
 8. Now that the firmware has been upgraded, you can disconnect the Pixhawk from your groundstation PC and reconnect the Pixhawk to the Jetson Nano.
 
@@ -298,7 +298,7 @@ NOTE: The safety configurations in this included param file are fairly lax, in t
 
 The vehicle frame is selected in the `Frame` tab of the `Vehicle Setup` page. Choose the `Boat` frame.
 
-![picture 4](../images/827ba1ce5e18bbfe8799e7edab56225b8cc96009a61a142c7d24b5d9d0537675.png)  
+![picture 4](./images/827ba1ce5e18bbfe8799e7edab56225b8cc96009a61a142c7d24b5d9d0537675.png)  
 
 ### Sensor Calibration
 
