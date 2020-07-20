@@ -290,6 +290,10 @@ We will start by uploading a pre-configured baseline parameter file that will ge
 4. Within this git repo, navigate to and select the file: `groundstation/config/asv_initial_params.params`
 5. After the file has been successfully uploaded, power cycle the vehicle.
 
+```
+NOTE: The safety configurations in this included param file are fairly lax, in terms of aspects like how good of a GPS fix the vehicle needs before allowing a mission to begin and some pre-flight checks that restrict when the vehicle can arm or disarm. If you would like to be more cautious, it is worth reading the Ardurover and QGroundControl docs and reviewing any parameters relating to arming and safety before operating the vehicle in the field.
+```
+
 ### Frame Configuration
 
 The vehicle frame is selected in the `Frame` tab of the `Vehicle Setup` page. Choose the `Boat` frame.
