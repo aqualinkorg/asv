@@ -38,7 +38,7 @@ There are 3 sets of holes for the Eurostyle Terminal Block. This is to allow for
 [Follow the Blue Robotics Guide](https://bluerobotics.com/learn/watertight-enclosure-assembly-guide/)
 
 ### Electrical Wiring
-Follow the [System Diagram](system_diagram.pdf) and [Electrical Connections](electrical_connections.pdf) diagrams.
+Follow the [System Diagram](drawings_and_cad/system_diagram.pdf) and [Electrical Connections](drawings_and_cad/electrical_connections.pdf) diagrams.
 
 ### Final Assembly
 #### Enclosure Assembly
