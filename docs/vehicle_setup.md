@@ -64,7 +64,7 @@ sudo apt-get install -y --no-install-recommends \
     python3-wheel
 
 # Install packages required to run mavproxy and status_light services
-sudo -H pip3 install mavproxy Jetson.GPIO
+sudo -H pip3 install mavproxy Jetson.GPIO bluerobotics-ping
 
 # Install Conan C++ package manager (used to build software)
 pip3 install conan==1.26.1
