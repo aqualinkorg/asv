@@ -181,8 +181,8 @@ void ASVBridgeNode::handle_vfr_hud()
 void ASVBridgeNode::handle_attitude()
 {
     float roll  = mavlink_msg_attitude_get_roll( &_msg );
-    float pitch = mavlink_msg_attitude_get_roll( &_msg );
-    float yaw   = mavlink_msg_attitude_get_roll( &_msg );
+    float pitch = mavlink_msg_attitude_get_pitch( &_msg );
+    float yaw   = mavlink_msg_attitude_get_yaw( &_msg );
 
     // TODO: Stop abusing these vector3's
     geometry_msgs::msg::Vector3Stamped msg;
