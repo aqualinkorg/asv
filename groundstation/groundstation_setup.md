@@ -27,7 +27,8 @@ sudo apt-get install \
     python3-opencv \
     python3-rosdep \
     python3-vcstool \
-    ros-foxy-desktop-full
+    python3-wheel \
+    ros-foxy-desktop
 
 # Install development tools (some of these may have already been installed)
 sudo apt-get install \
